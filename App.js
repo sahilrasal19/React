@@ -25,6 +25,7 @@ return (
 }
 
 const RestaurantCards = (props) => {
+        const {restData} = props;
 return (
         <div className="resto_cards">
                 <div className="food_image">
@@ -33,15 +34,46 @@ return (
                         </img>
                 </div>
                         <div className="food_details">
-                                <h3>{props.resto_name}</h3>
-                                <h4>{props.cuisine}</h4>
-                                <h4>{props.rating}</h4>
-                                <h4>{props.delivery_time}</h4>
+                                <h3>{restData.Restaurant_Name}</h3>
+                                <h4>{restData.Restaurant_Type}</h4>
+                                <h4>{restData.Ratings_for_Swiggy}</h4>
+                                <h4>{restData.Timing}</h4>
                         </div>
                     
         </div>
 )
 }
+const rest_details =
+[
+    {
+        "Restaurant_Name": "Sample Restaurant 1",
+        "URL": "https://www.sample-restaurant1.com",
+        "Timing": "10:00 AM - 10:00 PM",
+        "Address": "123 Main Street, Sample City",
+        "Location": "Sample Location",
+        "City": "Sample City",
+        "Offer": "10% off on orders over $50",
+        "Contact_Number": "+1 123-456-7890",
+        "Cost_for_two": 40,
+        "Restaurant_Type": "Cuisine Type 1",
+        "Ratings_for_Swiggy": 4.5
+    },
+    {
+        "Restaurant_Name": "Sample Restaurant 2",
+        "URL": "https://www.sample-restaurant2.com",
+        "Timing": "11:00 AM - 9:00 PM",
+        "Address": "456 Elm Street, Another City",
+        "Location": "Another Location",
+        "City": "Another City",
+        "Offer": "Free dessert with every meal",
+        "Contact_Number": "+1 987-654-3210",
+        "Cost_for_two": 30,
+        "Restaurant_Type": "Cuisine Type 2",
+        "Ratings_for_Swiggy": 4.0
+    },
+    
+]
+
 
 const Body = () => {
 return (
@@ -50,18 +82,13 @@ return (
                         Search
                 </div>
                 <div className="resto_container">  
-                                <RestaurantCards 
-                                resto_name = "Spring Fields"
-                                cuisine = "Pav Bhaji"
-                                rating = "4.4"
-                                delivery_time = "38 minutes" />
-                                <RestaurantCards
-                                resto_name = "Su Swagat"
-                                cuisine = "Vada Pav"
-                                rating = "4.7"
-                                delivery_time = "15 minutes" />
-                                
-                        
+                                 
+                                {rest_details.map((restaurants , index) => { 
+                                        return  (
+                                         <RestaurantCards key = {index} restData = {restaurants} />  
+                                                )                          }
+                                                  )
+                                }      
                 </div>
         </div>
 )
