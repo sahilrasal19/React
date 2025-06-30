@@ -45,7 +45,8 @@
 .resto_cards {
     width: 200px;
     height: 300px;
-    
+    padding: 5px;
+    margin: 5px;
     background-color: whitesmoke;
 }
 
@@ -73,4 +74,9 @@
     margin: 0px;
     margin-left: 5px;
     
+}
+
+.resto_container {
+    display: flex;
+    flex-wrap: wrap;
 }

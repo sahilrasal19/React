@@ -24,7 +24,7 @@ return (
 )
 }
 
-const RestaurantCards = () => {
+const RestaurantCards = (props) => {
 return (
         <div className="resto_cards">
                 <div className="food_image">
@@ -33,14 +33,12 @@ return (
                         </img>
                 </div>
                         <div className="food_details">
-                                <h3>Spring Fields</h3>
-                                <h4>Pav Bhaji Special</h4>
-                                <h4>4.4 Stars</h4>
-                                <h4>38 Minutes</h4>
+                                <h3>{props.resto_name}</h3>
+                                <h4>{props.cuisine}</h4>
+                                <h4>{props.rating}</h4>
+                                <h4>{props.delivery_time}</h4>
                         </div>
-                                
-                     
-                
+                    
         </div>
 )
 }
@@ -51,10 +49,19 @@ return (
                 <div className="search">
                         Search
                 </div>
-                <div className="resto-container">
-                        <div>
-                                <RestaurantCards/>
-                        </div>
+                <div className="resto_container">  
+                                <RestaurantCards 
+                                resto_name = "Spring Fields"
+                                cuisine = "Pav Bhaji"
+                                rating = "4.4"
+                                delivery_time = "38 minutes" />
+                                <RestaurantCards
+                                resto_name = "Su Swagat"
+                                cuisine = "Vada Pav"
+                                rating = "4.7"
+                                delivery_time = "15 minutes" />
+                                
+                        
                 </div>
         </div>
 )
