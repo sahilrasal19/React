@@ -1,9 +1,40 @@
-Namaste React
+# React
 
-<!-- ~ knows as tilde basically tells that the version will only have major updates of parcel
-^ knows as caret basically tells us that version will have minor updates of parcel -->
-<!-- //    const heading = document.createElement("h1");
-        //    heading.innerText = "SAHIL GOAT CODER";
+<!-- 
+Structure or Flow of the Program:
+Header
+    -Logo
+    -Nav Items
+Body 
+    -Search 
+    -Restaurant Container
+        -Restaurant Cards
+        -Img
+        -Name of rest, Cuisine, Ratings, Delivery Time
+Footer
+    -Copyright
+    -Links
+    -Address
+    -Contact 
+-->
 
-        //    const root = document.getElementById("root");
-        //    root.append(heading); -->
+<!-- 
+Two types of export and import
+
+default Export/Import
+
+export default Component;
+import Component from Path;
+
+Named Export/Import is used for multiple imports and exports
+
+export const Component;
+import { Component } from Path; 
+-->
+
+<!-- 
+React hooks
+Types
+useState()
+useEffect() 
+-->

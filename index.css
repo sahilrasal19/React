@@ -63,11 +63,20 @@
     padding: 5px;
     width: 190px;
     border-radius: 0%;
+    height: 140px;
 }
 
-.search {
+.filter {
     padding: 10px;
     font-size: 25px;
+}
+.filter-btn {
+    margin-top: 5px;
+}
+
+.filter-btn:hover {
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 .food_details {
