@@ -35,6 +35,6 @@ import { Component } from Path;
 <!-- 
 React hooks
 Types
-useState()
-useEffect() 
+useState() -- superpowerful react variables
+useEffect() -- 
 -->
