@@ -2,7 +2,7 @@ import RestaurantCards from "./RestaurantCards";
 import rest_details from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-
+import { Link } from "react-router-dom";
 
 
 const Body = () => {
@@ -71,8 +71,11 @@ return listOfRestaurants.length == 0 ? ( <Shimmer />) : (
                                 {
                                 FilteredRestaurants.map((restaurants) => { // map through the filtered restaurants
                                         
-                                        return  (
-                                         <RestaurantCards key = {restaurants.info.id} restData = {restaurants} />  // pass the restaurant data to the RestaurantCards component 
+                                         return (
+                                        <Link 
+                                        key = {restaurants.info.id} 
+                                        to={"/restaurants/"+ restaurants.info.id}> <RestaurantCards  restData = {restaurants} />  
+                                         </Link>
                                                 )                      }
                                                      )
                                 }      
