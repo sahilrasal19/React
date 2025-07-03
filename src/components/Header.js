@@ -2,7 +2,8 @@ import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 const Header = () => {
 
-        const [BtnName, setBtnName] = useState("LogIn")
+        const [BtnName, setBtnName] = useState("LogIn");
+        // if we use {btnName} in empty array of useEffect it will be called or re-rendered only when btnName changes
 return (
         <div className="header">
                 <div className="header_logo">
@@ -17,7 +18,8 @@ return (
                                 <li>Cart</li>
                                 <li>Contact Us</li>
                                 <li>
-                                        <button className="login" onClick={() => BtnName == "LogIn" ? setBtnName("LogOut") : setBtnName("LogIn")}>
+                                        <button className="login" 
+                                        onClick={() => BtnName == "LogIn" ? setBtnName("LogOut") : setBtnName("LogIn")}>
                                                 {BtnName}
                                         </button>
                                 </li>
