@@ -4,47 +4,49 @@ import Shimmer from "./Shimmer.js";
 import { MENU_URL } from "../utils/constants.js";
 
 const RestaurantMenu = () => {
+  const [resInfo, setresInfo] = useState(null);
 
-    const [resInfo, setresInfo] = useState(null);
+  const { resid } = useParams(); // get the resid from the url
 
-    const {resid} = useParams(); // get the resid from the url
+  useEffect(() => {
+    fetchMenu();
+  }, []);
 
-    useEffect (() => {
-        fetchMenu();
-    },[])
+  const fetchMenu = async () => {
+    const data = await fetch(MENU_URL + resid);
+    const json = await data.json();
+    console.log(json);
+    setresInfo(json?.data);
+  };
 
-    const fetchMenu = async() => {
-        const data = await fetch(MENU_URL+ resid );
+  if (resInfo == null) return <Shimmer />;
 
-            const json = await data.json();
-            console.log(json);
-            setresInfo(json?.data);
-            
-    };
+  const { name, cuisines, costForTwoMessage } =
+    resInfo?.cards[2]?.card?.card?.info;
+  const itemsInfo =
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
+      ?.itemCards || [];
 
-    if (resInfo == null) return <Shimmer />;
-  
-    const {name, cuisines, costForTwoMessage } = resInfo?.cards[2]?.card?.card?.info ;
-    const itemsInfo = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards || [];
-    
-    return ( 
-            <div className="menu">
-                <ul>
-                <li>{name}</li>
-                <li>{cuisines?.join(", ")}</li>
-                <li>{costForTwoMessage}</li>
-                </ul>
-                <ul>
-                  {itemsInfo.map((item) => {
-                    return(
-                    <li key={item.card.info.id}>   {item.card.info.name} - {item.card.info.defaultPrice} </li>)
-                    
-})}
-                    
-                </ul>
-            </div>
-)
-}
+  return (
+    <div className="menu">
+      <ul>
+        <li>{name}</li>
+        <li>{cuisines?.join(", ")}</li>
+        <li>{costForTwoMessage}</li>
+      </ul>
+      <ul>
+        {itemsInfo.map((item) => {
+          return (
+            <li key={item.card.info.id}>
+              {" "}
+              {item.card.info.name} - {item.card.info.defaultPrice}{" "}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
 
 export default RestaurantMenu;
 
