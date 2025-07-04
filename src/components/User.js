@@ -16,7 +16,6 @@ const User = (props) => {
       >
         Count:{count}
       </button>
-
       <h2>Location: {location} </h2>
       <h3>Contact: {contact} </h3>
     </div>
