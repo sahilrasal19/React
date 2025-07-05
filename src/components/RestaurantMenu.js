@@ -1,23 +1,16 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer.js";
-import { MENU_URL } from "../utils/constants.js";
+import useRestaurantMenu from "../utils/useRestaurantMenu.js";
+import useonlineStatus from "../utils/useonlineStatus.js";
 
 const RestaurantMenu = () => {
-  const [resInfo, setresInfo] = useState(null);
-
   const { resid } = useParams(); // get the resid from the url
+  const resInfo = useRestaurantMenu(resid);
+  const onlineStatus = useonlineStatus();
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  const fetchMenu = async () => {
-    const data = await fetch(MENU_URL + resid);
-    const json = await data.json();
-    console.log(json);
-    setresInfo(json?.data);
-  };
+  if (onlineStatus == false) {
+    return <h1>You are Offline. Please Check your internet connection!!</h1>;
+  }
 
   if (resInfo == null) return <Shimmer />;
 
