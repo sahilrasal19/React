@@ -49,7 +49,7 @@ const Body = () => {
         <div className="search flex items-center ">
           <input
             type="text"
-            className="m-4 px-4 border-1 border-solid rounded-lg"
+            className="m-4 px-4 border-1 border-solid  rounded-md shadow-md hover:border-2 transition-transform transform hover:scale-105"
             value={SearchText}
             onChange={(e) => {
               // Function to handle the change of search text
@@ -57,7 +57,7 @@ const Body = () => {
             }}
           />
           <button
-            className="bg-green-100 p-2 m-2 py-1 ml-1 hover:bg-green-200 cursor-pointer rounded-lg"
+            className="bg-green-100 p-2 m-2 py-1 ml-1 rounded-xl shadow-lg hover:bg-green-200 cursor-pointer hover:shadow-xl transition-transform transform hover:scale-105"
             onClick={() => {
               const filterSearch = listOfRestaurants.filter((res) => {
                 return res.info.name
@@ -72,7 +72,7 @@ const Body = () => {
         </div>
         <div className="filter flex items-center">
           <button
-            className="p-2 m-3 py-1 bg-green-100  hover:bg-green-200 cursor-pointer rounded-lg "
+            className="p-2 m-3 py-1 bg-green-100 cursor-pointer rounded-xl shadow-lg  hover:bg-green-200 hover:shadow-xl transition-transform transform hover:scale-105"
             onClick={() => {
               FilteredData();
             }}

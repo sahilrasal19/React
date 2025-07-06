@@ -5,7 +5,7 @@ const RestaurantCards = (props) => {
   const { cloudinaryImageId, name, avgRating, costForTwo, cuisines, sla } =
     restData?.info; // Destructuring the restData object to get the required properties
   return (
-    <div className="m-4 p-4 w-[250px] bg-gray-100 rounded-lg hover:bg-gray-200 shadow-xl">
+    <div className="m-4 p-4 w-[250px] bg-gray-100 rounded-lg shadow-xl hover:bg-gray-200 shadow-xl transition-transform transform hover:scale-105">
       <div className="food_image  item-center">
         <img
           className="food_logo items-center rounded-lg"
