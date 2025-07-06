@@ -45,11 +45,11 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="searchAndFilter">
-        <div className="search">
+      <div className="filter flex">
+        <div className="search flex items-center ">
           <input
             type="text"
-            className="textfield"
+            className="m-4 px-4 border-1 border-solid rounded-lg"
             value={SearchText}
             onChange={(e) => {
               // Function to handle the change of search text
@@ -57,7 +57,7 @@ const Body = () => {
             }}
           />
           <button
-            className="search-btn"
+            className="bg-green-100 p-2 m-2 py-1 ml-1 hover:bg-green-200 cursor-pointer rounded-lg"
             onClick={() => {
               const filterSearch = listOfRestaurants.filter((res) => {
                 return res.info.name
@@ -70,9 +70,9 @@ const Body = () => {
             Search
           </button>
         </div>
-        <div className="filter">
+        <div className="filter flex items-center">
           <button
-            className="filter-btn"
+            className="p-2 m-3 py-1 bg-green-100  hover:bg-green-200 cursor-pointer rounded-lg "
             onClick={() => {
               FilteredData();
             }}
@@ -81,7 +81,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="resto_container">
+      <div className="resto_container flex flex-wrap ">
         {FilteredRestaurants.map((restaurants) => {
           // map through the filtered restaurants
           return (
