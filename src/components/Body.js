@@ -1,4 +1,4 @@
-import RestaurantCards from "./RestaurantCards";
+import RestaurantCards, { withPromotedLabel } from "./RestaurantCards";
 import { API_URL } from "../utils/constants";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
@@ -9,6 +9,7 @@ const Body = () => {
   const [FilteredRestaurants, setFilteredRestaurants] = useState([]); // State to store the filtered list of restaurants
   const [SearchText, setSearchText] = useState(""); // State to store the search text
 
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCards);
   useEffect(() => {
     // This is a hook that runs when the component mounts/renders and runs only one initially bcoz of empty array
     // or everytime component has finished rendering useEffect is called but if no empty array then it runs after every render
@@ -24,11 +25,11 @@ const Body = () => {
     const datajson = await data.json(); // Converting the data to JSON format
     // Optional Chaining
     setlistOfRestaurants(
-      datajson?.data.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
+      datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
         ?.card?.card?.restaurants
     ); // Assigning the data to the state
     setFilteredRestaurants(
-      datajson?.data.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
+      datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
         ?.card?.card?.restaurants
     ); // Assigning the data to the state
   };
@@ -90,7 +91,11 @@ const Body = () => {
               to={"/restaurants/" + restaurants.info.id}
             >
               {" "}
-              <RestaurantCards restData={restaurants} />
+              {restaurants.info.promoted ? (
+                <RestaurantCardPromoted restData={restaurants} />
+              ) : (
+                <RestaurantCards restData={restaurants} />
+              )}
             </Link>
           );
         })}

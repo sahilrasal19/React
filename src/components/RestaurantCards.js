@@ -26,4 +26,17 @@ const RestaurantCards = (props) => {
   );
 };
 
+export const withPromotedLabel = (RestaurantCards) => {
+  return (props) => {
+    return (
+      <div className="transition-transform transform hover:scale-105 ">
+        <label className="absolute bg-green-500 text-white rounded-lg m-2 p-2 z-20">
+          Promoted
+        </label>
+        <RestaurantCards {...props} />
+      </div>
+    );
+  };
+};
+
 export default RestaurantCards;
