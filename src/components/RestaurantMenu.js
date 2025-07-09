@@ -3,11 +3,14 @@ import Shimmer from "./Shimmer.js";
 import useRestaurantMenu from "../utils/useRestaurantMenu.js";
 import useonlineStatus from "../utils/useonlineStatus.js";
 import RestaurantCategory from "./RestaurantCategory.js";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
   const { resid } = useParams(); // get the resid from the url
   const resInfo = useRestaurantMenu(resid);
   const onlineStatus = useonlineStatus();
+
+  const [showIndex, setshowIndex] = useState(null);
 
   if (onlineStatus == false) {
     return <h1>You are Offline. Please Check your internet connection!!</h1>;
@@ -33,10 +36,12 @@ const RestaurantMenu = () => {
         <li className="text-lg font-bold">{costForTwoMessage}</li>
       </ul>
 
-      {categories.map((category) => (
+      {categories.map((category, index) => (
         <RestaurantCategory
           key={category?.card?.card?.title}
           data={category.card?.card}
+          showItems={index == showIndex && true}
+          setshowIndex={() => setshowIndex(index)}
         />
       ))}
     </div>
