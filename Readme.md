@@ -44,159 +44,107 @@ useEffect() --
 -->
 
 <!--
-.header {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-}
+const Body = () => {
+  const [listOfRestaurants, setlistOfRestaurants] = useState([]); // State to store the list of restaurants and hooks can be used only in body (function) component
+  const [FilteredRestaurants, setFilteredRestaurants] = useState([]); // State to store the filtered list of restaurants
+  const [SearchText, setSearchText] = useState(""); // State to store the search text
 
-.header_logo {
-  height: 116.8px;
-}
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCards);
+  useEffect(() => {
+    // This is a hook that runs when the component mounts/renders and runs only one initially bcoz of empty array
+    // or everytime component has finished rendering useEffect is called but if no empty array then it runs after every render
+    // so we use empty array to run only once
 
-.logo {
-  width: 150px;
-  height: 139px;
-}
+    fetchData(); // Call the function to fetch data from API
+  }, []);
 
-.Navbar {
-  padding: 0px 20px;
-  margin-top: 0px;
-}
+  const fetchData = async () => {
+    // Function to fetch data from API
+    const data = await fetch(API_URL); // Fetching data from API
 
-.Navbar > ul {
-  list-style-type: none;
-  padding: 10px;
-  display: flex;
-  font-size: 24px;
-  align-items: center;
-  font-family: Arial, sans-serif;
-}
+    const datajson = await data.json(); // Converting the data to JSON format
+    // Optional Chaining
+    setlistOfRestaurants(
+      datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
+        ?.card?.card?.restaurants
+    ); // Assigning the data to the state
+    setFilteredRestaurants(
+      datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
+        ?.card?.card?.restaurants
+    ); // Assigning the data to the state
 
-.Navbar > ul > li {
-  padding: 10px;
-}
+  };
 
-.Navbar > ul > li:hover {
-  cursor: pointer;
-  color: orange;
-}
+  const FilteredData = () => {
+    // Function to filter the data based on search text
+    const filtered = listOfRestaurants.filter((item) => {
+      return item.info && item.info.avgRating > 4.5;
+    });
+    setFilteredRestaurants(filtered);
+  };
 
-.login {
-  background-color: orange;
-  color: black0;
-  border: 1px solid rgb(157, 110, 22);
-  height: 50px;
-  width: 100px;
-}
+  return listOfRestaurants.length == 0 ? (
+    <Shimmer />
+  ) : (
+    <div className="body">
+      <div className="filter flex">
+        <div className="search flex items-center ">
+          <input
+            type="text"
+            className="m-4 px-4 border-1 border-solid  rounded-md shadow-md hover:border-2 transition-transform transform hover:scale-105"
+            value={SearchText}
+            onChange={(e) => {
+              // Function to handle the change of search text
+              setSearchText(e.target.value);
+            }}
+          />
+          <button
+            className="bg-green-100 p-2 m-2 py-1 ml-1 rounded-xl shadow-lg hover:bg-green-200 cursor-pointer hover:shadow-xl transition-transform transform hover:scale-105"
+            onClick={() => {
+              const filterSearch = listOfRestaurants.filter((res) => {
+                return res.info.name
+                  .toLowerCase()
+                  .includes(SearchText.toLowerCase());
+              });
+              setFilteredRestaurants(filterSearch);
+            }}
+          >
+            Search
+          </button>
+        </div>
+        <div className="filter flex items-center">
+          <button
+            className="p-2 m-3 py-1 bg-green-100 cursor-pointer rounded-xl shadow-lg  hover:bg-green-200 hover:shadow-xl transition-transform transform hover:scale-105"
+            onClick={() => {
+              FilteredData();
+            }}
+          >
+            Top Restaurants
+          </button>
+        </div>
+      </div>
+      <div className="resto_container flex flex-wrap ">
+        {FilteredRestaurants.map((restaurants) => {
+          // map through the filtered restaurants
+          return (
+            <Link
+              key={restaurants.info.id}
+              to={"/restaurants/" + restaurants.info.id}
+            >
+              {" "}
+              {restaurants.info.promoted ? (
+                <RestaurantCardPromoted restData={restaurants} />
+              ) : (
+                <RestaurantCards restData={restaurants} />
+              )}
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-.login:hover {
-  cursor: pointer;
-  border: 1px solid black;
-  background-color: rgb(242, 158, 4);
-  color: aliceblue;
-}
+export default Body;
 
-.body {
-  border: 1px solid black;
-}
-
-.resto_cards {
-  width: 200px;
-  height: 350px;
-  padding: 5px;
-  margin: 10px;
-  background-color: whitesmoke;
-}
-
-.resto_cards:hover {
-  cursor: pointer;
-  border: 1px solid black;
-}
-
-.food_image {
-  width: 200px;
-  height: 129px;
-}
-.food_logo {
-  padding: 5px;
-  width: 190px;
-  border-radius: 0%;
-  height: 140px;
-}
-
-.filter {
-  /* margin: 10px; */
-  padding: 10px;
-  font-size: 25px;
-}
-.filter-btn {
-  background-color: orange;
-  color: rgb(5, 5, 5);
-  border: 1px solid rgb(192, 78, 78);
-  height: 30px;
-}
-
-.filter-btn:hover {
-  cursor: pointer;
-  border: 1px solid black;
-  color: whitesmoke;
-  background-color: rgb(242, 158, 4);
-}
-
-.food_details {
-  margin: 0px;
-  margin-left: 5px;
-}
-
-.resto_container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.shimmer-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.shimmer-card {
-  background-color: rgb(235, 234, 234);
-  margin: 10px;
-  width: 200px;
-  height: 350px;
-}
-
-.textfield {
-  margin-top: 5px;
-
-  color: rgb(5, 5, 5);
-  border: 1px solid rgb(5, 5, 5);
-  height: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.search {
-  margin-top: 10px;
-}
-
-.search-btn {
-  background-color: orange;
-  color: rgb(5, 5, 5);
-  border: 1px solid rgb(192, 78, 78);
-  height: 30px;
-}
-
-.search-btn:hover {
-  cursor: pointer;
-  color: aliceblue;
-  background-color: rgb(242, 158, 4);
-}
-
-.searchAndFilter {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px;
-  margin: 5px;
-}
 -->

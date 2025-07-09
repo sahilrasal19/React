@@ -3,7 +3,8 @@ import { CDN_URL } from "../utils/constants";
 const RestaurantCards = (props) => {
   const { restData } = props; // destructure restData from props
   const { cloudinaryImageId, name, avgRating, costForTwo, cuisines, sla } =
-    restData?.info; // Destructuring the restData object to get the required properties
+    restData?.info || {}; // Destructuring the restData object to get the required properties
+
   return (
     <div className="m-4 p-4 w-[250px] bg-gray-100 rounded-lg shadow-xl hover:bg-gray-200 shadow-xl transition-transform transform hover:scale-105">
       <div className="food_image  item-center">
@@ -14,15 +15,12 @@ const RestaurantCards = (props) => {
       </div>
       <div className="food_details ">
         <h3 className="font-bold py-2 text-lg">{name}</h3>
-        <h4>{cuisines.join(", ")}</h4>
+        <h4>{cuisines?.join(", ")}</h4>
         <h4>{avgRating} stars</h4>
         <h4>{costForTwo}</h4>
-
-        <h4>{sla.slaString}</h4>
+        <h4>{sla?.slaString}</h4>
       </div>
     </div>
-    // Displaying the restaurant name
-    // join the array of cuisines with comma and space
   );
 };
 

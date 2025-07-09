@@ -5,37 +5,30 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
 const Body = () => {
-  const [listOfRestaurants, setlistOfRestaurants] = useState([]); // State to store the list of restaurants and hooks can be used only in body (function) component
-  const [FilteredRestaurants, setFilteredRestaurants] = useState([]); // State to store the filtered list of restaurants
-  const [SearchText, setSearchText] = useState(""); // State to store the search text
+  const [listOfRestaurants, setlistOfRestaurants] = useState([]);
+  const [FilteredRestaurants, setFilteredRestaurants] = useState([]);
+  const [SearchText, setSearchText] = useState("");
 
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCards);
   useEffect(() => {
-    // This is a hook that runs when the component mounts/renders and runs only one initially bcoz of empty array
-    // or everytime component has finished rendering useEffect is called but if no empty array then it runs after every render
-    // so we use empty array to run only once
-
-    fetchData(); // Call the function to fetch data from API
+    fetchData();
   }, []);
 
   const fetchData = async () => {
-    // Function to fetch data from API
-    const data = await fetch(API_URL); // Fetching data from API
+    const data = await fetch(API_URL);
 
-    const datajson = await data.json(); // Converting the data to JSON format
-    // Optional Chaining
+    const datajson = await data.json();
     setlistOfRestaurants(
       datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
         ?.card?.card?.restaurants
-    ); // Assigning the data to the state
+    );
     setFilteredRestaurants(
       datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
         ?.card?.card?.restaurants
-    ); // Assigning the data to the state
+    );
   };
 
   const FilteredData = () => {
-    // Function to filter the data based on search text
     const filtered = listOfRestaurants.filter((item) => {
       return item.info && item.info.avgRating > 4.5;
     });
@@ -53,7 +46,6 @@ const Body = () => {
             className="m-4 px-4 border-1 border-solid  rounded-md shadow-md hover:border-2 transition-transform transform hover:scale-105"
             value={SearchText}
             onChange={(e) => {
-              // Function to handle the change of search text
               setSearchText(e.target.value);
             }}
           />
