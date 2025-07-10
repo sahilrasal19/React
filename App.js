@@ -9,6 +9,8 @@ import RestaurantMenu from "./src/components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Grocery from "./src/components/Grocery";
 import UserContext from "./src/utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./src/utils/appStore";
 
 const Grocery = lazy(() => import("./src/components/Grocery"));
 
@@ -22,14 +24,16 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ loggedInUser: userName }}>
-      <div>
-        <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}>
-          <Header />
-        </UserContext.Provider>
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userName }}>
+        <div>
+          <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}>
+            <Header />
+          </UserContext.Provider>
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
