@@ -1,12 +1,14 @@
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useonlineStatus from "../utils/useonlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const onlineStatus = useonlineStatus();
   const [BtnName, setBtnName] = useState("LogIn");
   // if we use {btnName} in empty array of useEffect it will be called or re-rendered only when btnName changes
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className="flex justify-between bg-green-50 shadow-lg m-2 ">
@@ -44,6 +46,7 @@ const Header = () => {
               {BtnName}
             </button>
           </li>
+          <li>{loggedInUser}</li>
         </ul>
       </div>
     </div>
