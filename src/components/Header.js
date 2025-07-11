@@ -3,13 +3,15 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useonlineStatus from "../utils/useonlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const onlineStatus = useonlineStatus();
   const [BtnName, setBtnName] = useState("LogIn");
   // if we use {btnName} in empty array of useEffect it will be called or re-rendered only when btnName changes
   const { loggedInUser } = useContext(UserContext);
-
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     <div className="flex justify-between bg-green-50 shadow-lg m-2 ">
       <div className="header_logo">
@@ -27,9 +29,11 @@ const Header = () => {
           <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
             <Link to="/about">About Us</Link>
           </li>
-          <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
-            Cart
-          </li>
+          <Link to="/cart">
+            <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
+              Cart-({cartItems.length} items)
+            </li>
+          </Link>
           <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
             <Link to="/contact ">Contact Us</Link>
           </li>
