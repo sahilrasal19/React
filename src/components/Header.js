@@ -34,9 +34,11 @@ const Header = () => {
               Cart-({cartItems.length} items)
             </li>
           </Link>
-          <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
-            <Link to="/contact ">Contact Us</Link>
-          </li>
+          <Link to="/contact">
+            <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
+              Contact Us
+            </li>
+          </Link>
           <li className="px-4 font-bold  hover:text-blue-400 cursor-pointer text-lg transition-transform transform hover:scale-105">
             <Link to="/grocery">Grocery</Link>
           </li>
