@@ -32,6 +32,6 @@ describe("Contact Us Page Test Case", () => {
 
     const inputBoxes = screen.getAllByRole("textbox");
 
-    console.log(inputBoxes);
+    // console.log(inputBoxes);
   });
 });

@@ -1,0 +1,2303 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.Navigation",
+            "tab": [
+              {
+                "id": "RESTAURANT",
+                "title": "Restaurants",
+                "selected": true,
+                "analytics": {
+                  "screenName": "explore",
+                  "context": "{\"tid\":\"f19a4c6a-bfc7-1b2c-dcee-06d3e88a95cb\",\"query\":\"spring fields\"}",
+                  "objectValue": "RESTAURANT",
+                  "clickObjectName": "click-tab"
+                },
+                "selectedBgColor": "#1B1E24",
+                "unselectedBgColor": "#FFFFFF",
+                "selectedTextColor": "#BFFFFFFF",
+                "unselectedTextColor": "#9902060C",
+                "selectedBorderColor": "#1B1E24",
+                "unselectedBorderColor": "#E2E2E7"
+              },
+              {
+                "id": "DISH",
+                "title": "Dishes",
+                "analytics": {
+                  "screenName": "explore",
+                  "context": "{\"tid\":\"f19a4c6a-bfc7-1b2c-dcee-06d3e88a95cb\",\"query\":\"spring fields\"}",
+                  "objectValue": "DISH",
+                  "clickObjectName": "click-tab"
+                },
+                "selectedBgColor": "#1B1E24",
+                "unselectedBgColor": "#FFFFFF",
+                "selectedTextColor": "#BFFFFFFF",
+                "unselectedTextColor": "#9902060C",
+                "selectedBorderColor": "#1B1E24",
+                "unselectedBorderColor": "#E2E2E7"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "RESTAURANT": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                      "info": {
+                        "id": "25165",
+                        "name": "Spring Fields",
+                        "city": "5",
+                        "slugs": {
+                          "restaurant": "spring-fields-borivali-east-borivali",
+                          "city": "mumbai"
+                        },
+                        "cloudinaryImageId": "hmhb00cjhlwsnpj1cqof",
+                        "address": "Country Park, Dattapada Road, Tata Ssl, Borivali East, Mumbai",
+                        "locality": "Borivali East",
+                        "areaName": "Borivali East",
+                        "costForTwo": "70000",
+                        "costForTwoMessage": "₹700 FOR TWO",
+                        "cuisines": ["North Indian", "Chinese", "Italian"],
+                        "avgRating": 4.3,
+                        "feeDetails": {},
+                        "avgRatingString": "4.3",
+                        "totalRatingsString": "3.7K+",
+                        "sla": {
+                          "deliveryTime": 82,
+                          "minDeliveryTime": 80,
+                          "maxDeliveryTime": 90,
+                          "lastMileTravel": 19.5,
+                          "serviceability": "NON_SERVICEABLE",
+                          "rainMode": "RAIN_MODE_NONE",
+                          "slaString": "80-90 MINS",
+                          "lastMileTravelString": "19.5 km",
+                          "iconType": "ICON_TYPE_EMPTY"
+                        },
+                        "availability": {
+                          "opened": true,
+                          "restaurantClosedMeta": {
+                            "title": "UNAVAILABLE",
+                            "subtitle": "AT YOUR LOCATION"
+                          }
+                        },
+                        "aggregatedDiscountInfo": {
+                          "visible": true
+                        },
+                        "badges": {},
+                        "unorderableMessage": "Does not deliver to selected location",
+                        "aggregatedDiscountInfoV2": {
+                          "visible": true
+                        },
+                        "ratingSlab": "RATING_SLAB_5",
+                        "availabilityServiceabilityMessage": "Does not deliver to your location",
+                        "orderabilityCommunication": {
+                          "title": {
+                            "text": "UNAVAILABLE"
+                          },
+                          "subTitle": {
+                            "text": "FOR DELIVERY"
+                          },
+                          "message": {
+                            "text": "Outside the outlet's delivery area",
+                            "textColour": "negative"
+                          },
+                          "customIcon": {
+                            "bgGradientColorStart": "#F64C41",
+                            "bgGradientColorEnd": "#E53554"
+                          },
+                          "commsStyling": {}
+                        },
+                        "cartOrderabilityNudgeBanner": {
+                          "parameters": {},
+                          "presentation": {}
+                        },
+                        "externalRatings": {
+                          "aggregatedRating": {
+                            "rating": "4.0",
+                            "ratingCount": "2.2K+"
+                          },
+                          "source": "GOOGLE",
+                          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                        },
+                        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                        "featuredSectionInfo": {}
+                      },
+                      "analytics": {
+                        "screenName": "explore",
+                        "context": "{\"tid\":\"f19a4c6a-bfc7-1b2c-dcee-06d3e88a95cb\",\"grid\":\"9d1bc3d4-bf45-4d68-9f16-78965cea20c5\",\"queryUniqueId\":\"ca85baaa-56ed-b6bb-a09e-70fcb6373c19\",\"query\":\"spring fields\"}",
+                        "objectValue": "25165",
+                        "impressionObjectName": "impression-restaurant",
+                        "clickObjectName": "click-restaurant"
+                      },
+                      "ctaWithParams": {
+                        "link": "swiggy://menu",
+                        "type": "DEEPLINK",
+                        "params": {
+                          "qrEnabled": "false",
+                          "restaurant_id": "25165",
+                          "query": "spring fields",
+                          "sourceSessionId": "lpp3412f-44dd-4399-8b00-85f57949d39a",
+                          "source": "SEARCH",
+                          "isSld": "false",
+                          "sourceRequestId": "6874b2c470665d13193fa1b4f119be64"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantCollection",
+                      "title": "More results like this",
+                      "restaurants": [
+                        {
+                          "info": {
+                            "id": "529267",
+                            "name": "Sahara Family Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "sahara(family)-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "kvpit8tuzhowid1bwwnh",
+                            "locality": "Jeedimetla",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": ["Indian", "Chinese", "Tandoor"],
+                            "avgRating": 4.1,
+                            "feeDetails": {
+                              "restaurantId": "529267",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.5K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=eea02cbc-6820-40d3-87b6-c4fd92f00913~p=0~adgrpid=eea02cbc-6820-40d3-87b6-c4fd92f00913#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=529267~plpr=COLLECTION~st=spring fields~eid=9095793a-7826-4403-9dba-fa06f54afd65~srvts=1752478404494~collid=56861",
+                            "sla": {
+                              "deliveryTime": 37,
+                              "minDeliveryTime": 35,
+                              "maxDeliveryTime": 40,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "35-40 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 00:50:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹69",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.5",
+                                "ratingCount": "268"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "eea02cbc-6820-40d3-87b6-c4fd92f00913"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "1027250",
+                            "name": "The Flavours",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "the-flavours-kurla-kurla"
+                            },
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/16/2b60cb5c-17e6-4f9c-8ae5-6cc254976b94_1027250.jpg",
+                            "locality": "Kurla",
+                            "areaName": "Chembur West",
+                            "costForTwo": "₹200 for two",
+                            "cuisines": ["North Indian", "Chinese", "Biryani"],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "1027250",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "17",
+                            "sla": {
+                              "deliveryTime": 47,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "4.5 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 16:00:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "50% OFF",
+                              "subHeader": "UPTO ₹100",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "74549",
+                            "name": "Sahara Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "sahara-restaurant-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "geedkuyt9lobwntf2k3o",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": [
+                              "Indian",
+                              "Chinese",
+                              "Tandoor",
+                              "Mughlai",
+                              "Biryani",
+                              "Desserts"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "74549",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "42K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=ff69fb10-1995-4e3a-834c-9d22d2afe251~p=1~adgrpid=ff69fb10-1995-4e3a-834c-9d22d2afe251#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=74549~plpr=COLLECTION~st=spring fields~eid=024ffb62-75fc-4719-b031-528666a6b43c~srvts=1752478404494~collid=56861",
+                            "sla": {
+                              "deliveryTime": 32,
+                              "minDeliveryTime": 30,
+                              "maxDeliveryTime": 35,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "30-35 MINS",
+                              "lastMileTravelString": "4.5 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:55:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "textExtendedBadges": [
+                                {
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available",
+                                  "fontColor": "#7E808C"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹79",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.7",
+                                "ratingCount": "545"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "ff69fb10-1995-4e3a-834c-9d22d2afe251"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "45846",
+                            "name": "Swagat",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "swagat-sakinaka-marol-sakinaka"
+                            },
+                            "cloudinaryImageId": "tfjnwkhgx1ad1elyhzlf",
+                            "locality": "Sakinaka",
+                            "areaName": "Asalpha",
+                            "costForTwo": "₹650 for two",
+                            "cuisines": ["Indian", "Chinese"],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "45846",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.2K+",
+                            "sla": {
+                              "deliveryTime": 50,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "4.5 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 16:00:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {
+                              "textExtendedBadges": [
+                                {
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available",
+                                  "fontColor": "#7E808C"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.1",
+                                "ratingCount": "855"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "802336",
+                            "name": "Yasin's Food Inn",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "yasin's-food-inn-kurla-kurla"
+                            },
+                            "cloudinaryImageId": "ad71e7632fb460a2559b64289ec9c2b2",
+                            "locality": "Kurla West",
+                            "areaName": "Kurla",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Chinese",
+                              "Mughlai",
+                              "Fast Food",
+                              "Biryani",
+                              "Beverages"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "802336",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.2K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=aefe0273-1d2c-4c67-a4a0-7ee46bb2d3e2~p=2~adgrpid=aefe0273-1d2c-4c67-a4a0-7ee46bb2d3e2#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=802336~plpr=COLLECTION~st=spring fields~eid=baf16c8f-b75f-48ed-af54-d7efdd5e6865~srvts=1752478404494~collid=56861",
+                            "sla": {
+                              "deliveryTime": 30,
+                              "minDeliveryTime": 25,
+                              "maxDeliveryTime": 30,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "25-30 MINS",
+                              "lastMileTravelString": "1.1 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 01:30:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹70",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.5",
+                                "ratingCount": "509"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "aefe0273-1d2c-4c67-a4a0-7ee46bb2d3e2"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "21983",
+                            "name": "Chote Nawab",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "chote-nawab-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/20/2960f21b-1081-494b-bc97-ab79347a8eb1_21983 (1).jpg",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": ["North Indian", "Chinese"],
+                            "avgRating": 4.1,
+                            "feeDetails": {
+                              "restaurantId": "21983",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "18K+",
+                            "sla": {
+                              "deliveryTime": 48,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "5.8 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹199",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.3",
+                                "ratingCount": "2.6K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "303850",
+                            "name": "Janata Tawa And Grill",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "janata\ttawa\tand\tgrill-kurla-kurla"
+                            },
+                            "cloudinaryImageId": "zrusx2rcjtsxpksm4lne",
+                            "locality": "Kurla West",
+                            "areaName": "Kurla West",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Mughlai",
+                              "Chinese",
+                              "Tandoor",
+                              "Biryani",
+                              "Kebabs"
+                            ],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "303850",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "6.6K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=46ef86fb-7c77-4fc5-9e5a-91c778c6d48a~p=3~adgrpid=46ef86fb-7c77-4fc5-9e5a-91c778c6d48a#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=303850~plpr=COLLECTION~st=spring fields~eid=b6347789-7eac-436e-802e-795512034239~srvts=1752478404494~collid=56861",
+                            "sla": {
+                              "deliveryTime": 35,
+                              "minDeliveryTime": 35,
+                              "maxDeliveryTime": 40,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "35-40 MINS",
+                              "lastMileTravelString": "1.5 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 06:00:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹59",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.2",
+                                "ratingCount": "3.7K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "46ef86fb-7c77-4fc5-9e5a-91c778c6d48a"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "719261",
+                            "name": "Gopal Krishna Veg & Non Veg",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "gopal-krishna-veg-&-non-veg-andheri-east-andheri-east-2"
+                            },
+                            "cloudinaryImageId": "69e375b6df14ed3b5912e8e4a18954c1",
+                            "locality": "J B Nagar",
+                            "areaName": "Andheri East",
+                            "costForTwo": "₹550 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Indian",
+                              "Chinese",
+                              "Biryani",
+                              "Seafood"
+                            ],
+                            "avgRating": 4.1,
+                            "feeDetails": {
+                              "restaurantId": "719261",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "35",
+                            "sla": {
+                              "deliveryTime": 54,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "6.7 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 15:30:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "10% OFF",
+                              "subHeader": "UPTO ₹40",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "253180",
+                            "name": "Food In",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "foodin-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "wco3nmhatmg57lt2e9bv",
+                            "locality": "SHIVAJI NAGAR CST ROAD",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": [
+                              "Biryani",
+                              "Chinese",
+                              "Desserts",
+                              "Tandoor"
+                            ],
+                            "avgRating": 4.2,
+                            "feeDetails": {
+                              "restaurantId": "253180",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "11K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=e6baf235-8ff4-4e9e-be75-85dbf23fb8de~p=4~adgrpid=e6baf235-8ff4-4e9e-be75-85dbf23fb8de#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=253180~plpr=COLLECTION~st=spring fields~eid=bdf8ecef-8ca8-4035-be69-a57fa660a7b2~srvts=1752478404494~collid=56861",
+                            "sla": {
+                              "deliveryTime": 35,
+                              "minDeliveryTime": 30,
+                              "maxDeliveryTime": 35,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "30-35 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "textExtendedBadges": [
+                                {
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available",
+                                  "fontColor": "#7E808C"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹147",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                            "campaignId": "e6baf235-8ff4-4e9e-be75-85dbf23fb8de"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "78085",
+                            "name": "Grand",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "grand-santacruz-east-scruz-bandra-east"
+                            },
+                            "cloudinaryImageId": "tbknedaimr9wq1frqpxh",
+                            "locality": "Santacruz East",
+                            "areaName": "Santacruz East",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Chinese",
+                              "Mughlai",
+                              "Tandoor",
+                              "Seafood"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "78085",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "356",
+                            "sla": {
+                              "deliveryTime": 49,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "5.7 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 15:30:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "40% OFF",
+                              "subHeader": "UPTO ₹80",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.6",
+                                "ratingCount": "1.3K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "61228",
+                            "name": "JAYA REFRESHMENT AND BAR",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "sapphire-the-bar-jaya-refreshment-and-bar-govandi-east-chembur"
+                            },
+                            "cloudinaryImageId": "xta752v1l7gttou4xfjg",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹1000 for two",
+                            "cuisines": ["North Indian", "Indian", "Chinese"],
+                            "avgRating": 4,
+                            "feeDetails": {
+                              "restaurantId": "61228",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "131",
+                            "sla": {
+                              "deliveryTime": 40,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "7.4 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:55:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹175 OFF",
+                              "subHeader": "ABOVE ₹599",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.9",
+                                "ratingCount": "183"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "950612",
+                            "name": "24x7 Peninsula Delivery Kitchen",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "24x7-peninsula-delivery-kitchen-marol-sakinaka-marol-sakinaka-2"
+                            },
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/31/1558f82a-b8dd-4c73-94ff-8817c8a56cab_950612.jpg",
+                            "locality": "Marol Sakinaka",
+                            "areaName": "Marol Sakinaka",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": ["North Indian"],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "950612",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "11",
+                            "sla": {
+                              "deliveryTime": 63,
+                              "minDeliveryTime": 60,
+                              "maxDeliveryTime": 70,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "60-70 MINS",
+                              "lastMileTravelString": "5.6 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "106768",
+                            "name": "Golden Palace",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "golden-palace-kurla-kurla"
+                            },
+                            "cloudinaryImageId": "emlg1g79suotarwio2pg",
+                            "locality": "Kurla West",
+                            "areaName": "Kurla West",
+                            "costForTwo": "₹450 for two",
+                            "cuisines": ["North Indian", "Chinese"],
+                            "avgRating": 4.7,
+                            "feeDetails": {
+                              "restaurantId": "106768",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "66",
+                            "sla": {
+                              "deliveryTime": 37,
+                              "minDeliveryTime": 35,
+                              "maxDeliveryTime": 40,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "35-40 MINS",
+                              "lastMileTravelString": "2.6 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:30:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.8",
+                                "ratingCount": "652"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "22653",
+                            "name": "Kook",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "kook-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "ozgmsot3bmnorybkwefz",
+                            "locality": "Basant Park",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹650 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Mughlai",
+                              "Chinese",
+                              "Biryani",
+                              "Tandoor",
+                              "Indian",
+                              "Seafood"
+                            ],
+                            "avgRating": 4.2,
+                            "feeDetails": {
+                              "restaurantId": "22653",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "9.7K+",
+                            "sla": {
+                              "deliveryTime": 43,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 00:45:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "textExtendedBadges": [
+                                {
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available",
+                                  "fontColor": "#7E808C"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹125 OFF",
+                              "subHeader": "ABOVE ₹249",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "213314",
+                            "name": "Tara Punjab",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "tara-punjab-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "hjb5cz6mvvyalrj9rg1d",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": ["North Indian", "Punjabi", "Tandoor"],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "213314",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "399",
+                            "sla": {
+                              "deliveryTime": 41,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹50 OFF",
+                              "subHeader": "ABOVE ₹249",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.9",
+                                "ratingCount": "974"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "31308",
+                            "name": "BKC Dive",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "bkc-dive-bandra-kurla-complex-scruz-bandra-east"
+                            },
+                            "cloudinaryImageId": "fgjxxzyaklul41k8x1ne",
+                            "locality": "Bandra Kurla Complex",
+                            "areaName": "Bandra Kurla Complex",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Chinese",
+                              "Continental",
+                              "American",
+                              "Kebabs",
+                              "Mughlai",
+                              "Biryani",
+                              "Desserts"
+                            ],
+                            "avgRating": 4.2,
+                            "feeDetails": {
+                              "restaurantId": "31308",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "874",
+                            "sla": {
+                              "deliveryTime": 41,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "2.2 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "10% OFF",
+                              "subHeader": "UPTO ₹40",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.9",
+                                "ratingCount": "10K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "871874",
+                            "name": "Sahara Kitchen",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "sahara-restaurant-chembur-chembur-3"
+                            },
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/c392c005-da0e-4ade-ae8e-a3a2e8fc4df8_871874.jpg",
+                            "locality": "Amar Nagar",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": [
+                              "North Indian",
+                              "Chinese",
+                              "Biryani",
+                              "Snacks",
+                              "Street Food",
+                              "Mughlai"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "871874",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "315",
+                            "sla": {
+                              "deliveryTime": 44,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "6.6 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹150 OFF",
+                              "subHeader": "ABOVE ₹449",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "72264",
+                            "name": "Raj Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "raj-restaurant-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "jbacamtngqkl48n2h8hm",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹700 for two",
+                            "cuisines": [
+                              "Indian",
+                              "Punjabi",
+                              "North Indian",
+                              "Biryani",
+                              "Chinese"
+                            ],
+                            "avgRating": 4.6,
+                            "feeDetails": {
+                              "restaurantId": "72264",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "17K+",
+                            "sla": {
+                              "deliveryTime": 53,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "5.8 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 03:00:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "textExtendedBadges": [
+                                {
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available",
+                                  "fontColor": "#7E808C"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹100 OFF",
+                              "subHeader": "ABOVE ₹999",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.8",
+                                "ratingCount": "1.0K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "18945",
+                            "name": "RK Wine and Dine",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "rk-wine-and-dine-lbs-marg-ghatkopar-ghatkopar-vikhroli"
+                            },
+                            "cloudinaryImageId": "e7e6d1ylu1bkixfvjgwy",
+                            "locality": "Ghatkopar West",
+                            "areaName": "Ghatkopar West",
+                            "costForTwo": "₹700 for two",
+                            "cuisines": ["Mughlai", "North Indian", "Chinese"],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "18945",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "5.1K+",
+                            "sla": {
+                              "deliveryTime": 57,
+                              "minDeliveryTime": 55,
+                              "maxDeliveryTime": 65,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "55-65 MINS",
+                              "lastMileTravelString": "4.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 16:00:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.0",
+                                "ratingCount": "1.5K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "391421",
+                            "name": "Cafe Marol (Since 1975)",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "cafe-marol-marol-sakinaka-marol-sakinaka"
+                            },
+                            "cloudinaryImageId": "fdkg3knqkbhma8jqew9o",
+                            "locality": "Marol Maroshi Road",
+                            "areaName": "Marol Sakinaka",
+                            "costForTwo": "₹700 for two",
+                            "cuisines": ["Chinese"],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "391421",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "72",
+                            "sla": {
+                              "deliveryTime": 54,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "5.8 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:45:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "25% OFF",
+                              "subHeader": "UPTO ₹125",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "560758",
+                            "name": "The Spice Court",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "the-spice-court-ghatkopar-vikhroli-ghatkopar-vikhroli"
+                            },
+                            "cloudinaryImageId": "jtvmtwilsckfdxnzics5",
+                            "locality": "Ghatkopar West",
+                            "areaName": "Ghatkopar West",
+                            "costForTwo": "₹700 for two",
+                            "cuisines": [
+                              "Chinese",
+                              "North Indian",
+                              "Beverages",
+                              "Desserts"
+                            ],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "560758",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "309",
+                            "sla": {
+                              "deliveryTime": 52,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "4.8 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹150 OFF",
+                              "subHeader": "ABOVE ₹999",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.2",
+                                "ratingCount": "2.1K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "1617",
+                            "name": "Kosho",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "kosho-chandivali-powai"
+                            },
+                            "cloudinaryImageId": "ancncachevovk1bif0ye",
+                            "locality": "Chandivali",
+                            "areaName": "Chandivali",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": [
+                              "Mughlai",
+                              "North Indian",
+                              "Chinese",
+                              "Seafood",
+                              "Italian"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "1617",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "24K+",
+                            "sla": {
+                              "deliveryTime": 49,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "7.1 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 02:00:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "textExtendedBadges": [
+                                {
+                                  "iconId": "guiltfree/GF_Logo_android_3x",
+                                  "shortDescription": "options available",
+                                  "fontColor": "#7E808C"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹75 OFF",
+                              "subHeader": "ABOVE ₹499",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.0",
+                                "ratingCount": "227"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "581264",
+                            "name": "New Airport Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "new-airport-restaurant-marol-sakinaka-marol-sakinaka"
+                            },
+                            "cloudinaryImageId": "m17tuos5nbpqmfot25o6",
+                            "locality": "Marol",
+                            "areaName": "Marol",
+                            "costForTwo": "₹450 for two",
+                            "cuisines": [
+                              "Chinese",
+                              "Indian",
+                              "North Indian",
+                              "Tandoor",
+                              "Desserts",
+                              "Fast Food"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "581264",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "963",
+                            "sla": {
+                              "deliveryTime": 57,
+                              "minDeliveryTime": 55,
+                              "maxDeliveryTime": 65,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "55-65 MINS",
+                              "lastMileTravelString": "6.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 02:45:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.2",
+                                "ratingCount": "2.2K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "552529",
+                            "name": "Peninsula Grand Hotel",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "fat-monk-chinese-marol-sakinaka-marol-sakinaka-2"
+                            },
+                            "cloudinaryImageId": "oqyknkdfpnuaiu4wjmeq",
+                            "locality": "Andheri East",
+                            "areaName": "Sakinaka",
+                            "costForTwo": "₹450 for two",
+                            "cuisines": [
+                              "Biryani",
+                              "Chinese",
+                              "Tandoor",
+                              "Asian"
+                            ],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "552529",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.0K+",
+                            "sla": {
+                              "deliveryTime": 51,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "4.4 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "60% OFF",
+                              "subHeader": "UPTO ₹120",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.1",
+                                "ratingCount": "1.4K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "96618",
+                            "name": "Chakra (Since 1985)",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "chakra-sakinaka-marol-sakinaka"
+                            },
+                            "cloudinaryImageId": "jeuvjr1xwkze20crpbvt",
+                            "locality": "Sakinaka",
+                            "areaName": "Marol Sakinaka",
+                            "costForTwo": "₹600 for two",
+                            "cuisines": ["Indian", "Chinese"],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "96618",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.6K+",
+                            "sla": {
+                              "deliveryTime": 52,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "4.6 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 16:00:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "imageBadges": [
+                                {
+                                  "imageId": "newg.png",
+                                  "description": "Gourmet"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "30% OFF",
+                              "subHeader": "UPTO ₹75",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.3",
+                                "ratingCount": "3.3K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "483173",
+                            "name": "The Chembur Gymkhana (Phase 2)",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "the-chembur-gymkhana-(phase-2)-scruz-bandra-east-scruz-bandra-east"
+                            },
+                            "cloudinaryImageId": "gpiyvvn2ghxhxtvdzyi3",
+                            "locality": "Scruz Bandra East",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹200 for two",
+                            "cuisines": ["Indian", "Tandoor", "Chinese"],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "483173",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "5.7K+",
+                            "sla": {
+                              "deliveryTime": 47,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "5.5 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 15:00:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹129",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "104409",
+                            "name": "Sai Darshan",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "sai-darshan-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "isuefcpuadx9d0skohpa",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹600 for two",
+                            "cuisines": ["Indian"],
+                            "avgRating": 4.5,
+                            "feeDetails": {
+                              "restaurantId": "104409",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "125",
+                            "sla": {
+                              "deliveryTime": 46,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "5.7 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 00:00:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.8",
+                                "ratingCount": "224"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "373510",
+                            "name": "The Unique Family Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "the-unique-family-restaurant-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "mgbfzdj803wrkkpzragq",
+                            "locality": "N G Acharya Marg",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹250 for two",
+                            "cuisines": [
+                              "Tandoor",
+                              "Chinese",
+                              "Seafood",
+                              "Biryani"
+                            ],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "373510",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "657",
+                            "sla": {
+                              "deliveryTime": 46,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "6.9 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "10% OFF",
+                              "subHeader": "UPTO ₹40",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "68544",
+                            "name": "Hotel Sadguru",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "hotel-sadguru-ghatkopar-east-ghatkopar-vikhroli"
+                            },
+                            "cloudinaryImageId": "c9idtirw687q7clevjdp",
+                            "locality": "Ghatkopar East",
+                            "areaName": "Vikhroli",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": ["Indian", "Chinese"],
+                            "avgRating": 4.7,
+                            "feeDetails": {
+                              "restaurantId": "68544",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "3.3K+",
+                            "sla": {
+                              "deliveryTime": 44,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 15:45:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "30% OFF",
+                              "subHeader": "UPTO ₹150",
+                              "discountTag": "SAVE BIG",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "109780",
+                            "name": "New Lucky Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "new-lucky-restaurant-kurla-west-kurla"
+                            },
+                            "cloudinaryImageId": "tfctxcwbgqsoe1cqwwvv",
+                            "locality": "Kalina",
+                            "areaName": "Santacruz East",
+                            "costForTwo": "₹450 for two",
+                            "cuisines": ["Mughlai", "Biryani"],
+                            "avgRating": 4.1,
+                            "feeDetails": {
+                              "restaurantId": "109780",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "341",
+                            "sla": {
+                              "deliveryTime": 35,
+                              "minDeliveryTime": 35,
+                              "maxDeliveryTime": 40,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "35-40 MINS",
+                              "lastMileTravelString": "2.6 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:59:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "971791",
+                            "name": "The Dual Spice",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "the-dual-spice-ghatkopar-vikhroli-ghatkopar-vikhroli"
+                            },
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/12/88f8d1c2-57a7-44fc-862c-b9ef9ea3e1e4_971791.jpg",
+                            "locality": "Naidu Colony",
+                            "areaName": "Ghatkopar Vikhroli",
+                            "costForTwo": "₹1500 for two",
+                            "cuisines": [
+                              "Chinese",
+                              "Continental",
+                              "Maharashtrian",
+                              "Tandoor",
+                              "Malwani",
+                              "Pizzas"
+                            ],
+                            "avgRating": 4.2,
+                            "feeDetails": {
+                              "restaurantId": "971791",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "24",
+                            "sla": {
+                              "deliveryTime": 45,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "4.6 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 23:55:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "10% OFF",
+                              "subHeader": "UPTO ₹40",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "23342",
+                            "name": "Via Bombay",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "moksh-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "ca842ef5d9a0d6ccdbfb6e7022eaf288",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹1000 for two",
+                            "cuisines": [
+                              "Indian",
+                              "Biryani",
+                              "Tandoor",
+                              "Pan-Asian",
+                              "Desserts",
+                              "Bengali",
+                              "Beverages",
+                              "South Indian",
+                              "Punjabi",
+                              "Andhra"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "23342",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.4K+",
+                            "sla": {
+                              "deliveryTime": 47,
+                              "minDeliveryTime": 45,
+                              "maxDeliveryTime": 55,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "45-55 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 15:30:00",
+                              "opened": true
+                            },
+                            "badges": {
+                              "imageBadges": [
+                                {
+                                  "imageId": "newg.png",
+                                  "description": "Gourmet"
+                                }
+                              ]
+                            },
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹125 OFF",
+                              "subHeader": "ABOVE ₹599",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.6",
+                                "ratingCount": "2.2K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "975663",
+                            "name": "The Chembur Gymkhana",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "the-chembur-gymkhana-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/19/954cdbed-36b6-41ed-bfd5-10b9628a7d45_975663.jpg",
+                            "locality": "Chembur",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": ["Indian"],
+                            "avgRating": 4.6,
+                            "feeDetails": {
+                              "restaurantId": "975663",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "557",
+                            "sla": {
+                              "deliveryTime": 44,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-14 15:00:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "359061",
+                            "name": "Hotel Mahesh Fine Dine",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "hotel-mahesh-fine-dine-scruz-bandra-east-scruz-bandra-east"
+                            },
+                            "cloudinaryImageId": "efff18wuu1moils2evby",
+                            "locality": "Santacruz East",
+                            "areaName": "Santacruz East",
+                            "costForTwo": "₹400 for two",
+                            "cuisines": ["Indian"],
+                            "avgRating": 4.4,
+                            "feeDetails": {
+                              "restaurantId": "359061",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.0K+",
+                            "sla": {
+                              "deliveryTime": 44,
+                              "minDeliveryTime": 40,
+                              "maxDeliveryTime": 45,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "40-45 MINS",
+                              "lastMileTravelString": "7.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 01:00:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "10% OFF",
+                              "subHeader": "UPTO ₹40",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.0",
+                                "ratingCount": "627"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "739810",
+                            "name": "Chak De",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "chak-de-chembur-chembur"
+                            },
+                            "cloudinaryImageId": "ecf34bdf0da5d345990b7d3dd3d3edf2",
+                            "locality": "r c marg",
+                            "areaName": "Chembur",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": ["South Indian", "Indian"],
+                            "avgRating": 4.7,
+                            "feeDetails": {
+                              "restaurantId": "739810",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "76",
+                            "sla": {
+                              "deliveryTime": 38,
+                              "minDeliveryTime": 35,
+                              "maxDeliveryTime": 40,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "35-40 MINS",
+                              "lastMileTravelString": "5.0 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 00:45:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "₹125 OFF",
+                              "subHeader": "ABOVE ₹299",
+                              "discountTag": "FLAT DEAL",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "--"
+                              }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "65879",
+                            "name": "Supreme Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "supreme-restaurant-sakinaka-marol-sakinaka"
+                            },
+                            "cloudinaryImageId": "t7wq7mmvdaq618d4oj8h",
+                            "locality": "Sakinaka",
+                            "areaName": "Sakinaka",
+                            "costForTwo": "₹400 for two",
+                            "cuisines": [
+                              "Lebanese",
+                              "Turkish",
+                              "Arabian",
+                              "Fast Food",
+                              "Healthy Food",
+                              "Beverages"
+                            ],
+                            "avgRating": 4.3,
+                            "feeDetails": {
+                              "restaurantId": "65879",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "2.4K+",
+                            "sla": {
+                              "deliveryTime": 57,
+                              "minDeliveryTime": 55,
+                              "maxDeliveryTime": 65,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "55-65 MINS",
+                              "lastMileTravelString": "4.9 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 02:59:00",
+                              "opened": true
+                            },
+                            "aggregatedDiscountInfo": {},
+                            "badges": {},
+                            "aggregatedDiscountInfoV2": {},
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "4.0",
+                                "ratingCount": "2.4K+"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        },
+                        {
+                          "info": {
+                            "id": "447706",
+                            "name": "Unicon Family Restaurant",
+                            "city": "5",
+                            "slugs": {
+                              "restaurant": "shoeb-abdullah-mehsaniya-marol-sakinaka-marol-sakinaka"
+                            },
+                            "cloudinaryImageId": "wrxyacz6umoqkrl98ih9",
+                            "locality": "Marol",
+                            "areaName": "Marol",
+                            "costForTwo": "₹550 for two",
+                            "cuisines": ["Chinese", "Mughlai", "Biryani"],
+                            "avgRating": 4.2,
+                            "feeDetails": {
+                              "restaurantId": "447706",
+                              "title": "Delivery Charge",
+                              "amount": "0"
+                            },
+                            "totalRatingsString": "1.5K+",
+                            "sla": {
+                              "deliveryTime": 53,
+                              "minDeliveryTime": 50,
+                              "maxDeliveryTime": 60,
+                              "serviceability": "SERVICEABLE",
+                              "slaString": "50-60 MINS",
+                              "lastMileTravelString": "5.9 km",
+                              "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                              "nextCloseTime": "2025-07-15 01:00:00",
+                              "opened": true
+                            },
+                            "badges": {},
+                            "aggregatedDiscountInfoV3": {
+                              "header": "ITEMS",
+                              "subHeader": "AT ₹49",
+                              "logoCtx": {
+                                "text": "BENEFITS"
+                              }
+                            },
+                            "externalRatings": {
+                              "aggregatedRating": {
+                                "rating": "3.8",
+                                "ratingCount": "172"
+                              },
+                              "source": "GOOGLE",
+                              "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                          },
+                          "analytics": {},
+                          "cta": {}
+                        }
+                      ],
+                      "cta": {},
+                      "id": "56861",
+                      "theme": "SEARCH_SIMILAR_RESTAURANTS"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true
+  },
+  "tid": "9a6fd84b-2b11-40a7-8d19-46bc80e1cfb1",
+  "sid": "lpp3412f-44dd-4399-8b00-85f57949d39a",
+  "deviceId": "b3ea8f52-e0a4-7bf8-04bb-1ae6b17d68e9",
+  "csrfToken": "cKDfxqibDivH-FUOGnIFqqIB0bgsk-5cRPIpEf_0"
+}

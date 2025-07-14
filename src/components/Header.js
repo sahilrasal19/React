@@ -11,7 +11,7 @@ const Header = () => {
   // if we use {btnName} in empty array of useEffect it will be called or re-rendered only when btnName changes
   const { loggedInUser } = useContext(UserContext);
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
   return (
     <div className="flex justify-between bg-green-50 shadow-lg m-2 ">
       <div className="header_logo">

@@ -1,0 +1,57 @@
+{
+  "info": {
+    "id": "529267",
+    "name": "Sahara Family Restaurant",
+    "city": "5",
+    "slugs": {
+      "restaurant": "sahara(family)-chembur-chembur"
+    },
+    "cloudinaryImageId": "kvpit8tuzhowid1bwwnh",
+    "locality": "Jeedimetla",
+    "areaName": "Chembur",
+    "costForTwo": "₹300 for two",
+    "cuisines": ["Indian", "Chinese", "Tandoor"],
+    "avgRating": 4.1,
+    "feeDetails": {
+      "restaurantId": "529267",
+      "title": "Delivery Charge",
+      "amount": "0"
+    },
+    "totalRatingsString": "1.5K+",
+    "promoted": true,
+    "adTrackingId": "cid=eea02cbc-6820-40d3-87b6-c4fd92f00913~p=0~adgrpid=eea02cbc-6820-40d3-87b6-c4fd92f00913#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=529267~plpr=COLLECTION~st=spring fields~eid=6f230eab-87a2-48d0-8f1b-e90f99bbd642~srvts=1752475291897~collid=56861",
+    "sla": {
+      "deliveryTime": 37,
+      "minDeliveryTime": 35,
+      "maxDeliveryTime": 40,
+      "serviceability": "SERVICEABLE",
+      "slaString": "35-40 MINS",
+      "lastMileTravelString": "5.0 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2025-07-15 00:50:00",
+      "opened": true
+    },
+    "badges": {},
+    "aggregatedDiscountInfoV3": {
+      "header": "ITEMS",
+      "subHeader": "AT ₹69",
+      "logoCtx": {
+        "text": "BENEFITS"
+      }
+    },
+    "externalRatings": {
+      "aggregatedRating": {
+        "rating": "4.5",
+        "ratingCount": "268"
+      },
+      "source": "GOOGLE",
+      "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    "campaignId": "eea02cbc-6820-40d3-87b6-c4fd92f00913"
+  },
+  "analytics": {},
+  "cta": {}
+}
