@@ -1,151 +1,95 @@
-# React
+# 🍔 Online Food Ordering App
 
-<!--
-Structure or Flow of the Program:
-Header
-    -Logo
-    -Nav Items
-Body
-    -Search
-    -Restaurant Container
-        -Restaurant Cards
-        -Img
-        -Name of rest, Cuisine, Ratings, Delivery Time
-Footer
-    -Copyright
-    -Links
-    -Address
-    -Contact
--->
+A fully responsive food ordering front-end app built with React, Tailwind CSS, Redux, and React Router. This app simulates an online food delivery experience, featuring restaurant listings, menu items, cart functionality, and routing between pages.
 
-<!--
-Two types of export and import
+---
 
-default Export/Import
+## 🚀 Features
 
-export default Component;
-import Component from Path;
+- ✅ Restaurant listing with search and filter
+- ✅ Restaurant menu with category accordion
+- ✅ Add/Remove items from cart using Redux
+- ✅ Persistent user context
+- ✅ Custom hooks (e.g., `useOnlineStatus`, `useRestaurantMenu`)
+- ✅ Dynamic routing with React Router
+- ✅ Responsive UI with Tailwind CSS
+- ✅ Shimmer UI on loading
+- ✅ Promoted restaurant label (HOC pattern)
 
-Named Export/Import is used for multiple imports and exports
+---
 
-export const Component;
-import { Component } from Path;
--->
+## 🛠 Tech Stack
 
-<!--
-React hooks
-Types
-useState() -- superpowerful react variables
-useEffect() --
--->
+- **React**
+- **Redux Toolkit**
+- **React Router DOM**
+- **Tailwind CSS**
+- **Custom Hooks**
+- **Class & Functional Components**
 
-<!--
-// this postcssrc is a way to make sure our project understands postcss and config is to tell parcel that pls understand our tailwind framework
--->
+---
 
-<!--
-const Body = () => {
-  const [listOfRestaurants, setlistOfRestaurants] = useState([]); // State to store the list of restaurants and hooks can be used only in body (function) component
-  const [FilteredRestaurants, setFilteredRestaurants] = useState([]); // State to store the filtered list of restaurants
-  const [SearchText, setSearchText] = useState(""); // State to store the search text
+## 📁 Folder Structure
 
-  const RestaurantCardPromoted = withPromotedLabel(RestaurantCards);
-  useEffect(() => {
-    // This is a hook that runs when the component mounts/renders and runs only one initially bcoz of empty array
-    // or everytime component has finished rendering useEffect is called but if no empty array then it runs after every render
-    // so we use empty array to run only once
+src/
+│
+├── components/
+│ ├── Header.js
+│ ├── Body.js
+│ ├── RestaurantMenu.js
+│ ├── RestaurantCards.js
+│ ├── RestaurantCategory.js
+│ ├── ItemsList.js
+│ ├── Cart.js
+│ └── Shimmer.js
+│
+├── utils/
+│ ├── constants.js
+│ ├── useRestaurantMenu.js
+│ ├── useOnlineStatus.js
+│ ├── cartSlice.js
+│ └── UserContext.js
+│
+├── App.js
+├── index.js
+└── ...
 
-    fetchData(); // Call the function to fetch data from API
-  }, []);
+## 🔧 Installation
 
-  const fetchData = async () => {
-    // Function to fetch data from API
-    const data = await fetch(API_URL); // Fetching data from API
+1. **Clone the repository**
 
-    const datajson = await data.json(); // Converting the data to JSON format
-    // Optional Chaining
-    setlistOfRestaurants(
-      datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
-        ?.card?.card?.restaurants
-    ); // Assigning the data to the state
-    setFilteredRestaurants(
-      datajson?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards[1]
-        ?.card?.card?.restaurants
-    ); // Assigning the data to the state
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
 
-  };
+   ```
 
-  const FilteredData = () => {
-    // Function to filter the data based on search text
-    const filtered = listOfRestaurants.filter((item) => {
-      return item.info && item.info.avgRating > 4.5;
-    });
-    setFilteredRestaurants(filtered);
-  };
+2. **Install dependencies**
+   npm install
 
-  return listOfRestaurants.length == 0 ? (
-    <Shimmer />
-  ) : (
-    <div className="body">
-      <div className="filter flex">
-        <div className="search flex items-center ">
-          <input
-            type="text"
-            className="m-4 px-4 border-1 border-solid  rounded-md shadow-md hover:border-2 transition-transform transform hover:scale-105"
-            value={SearchText}
-            onChange={(e) => {
-              // Function to handle the change of search text
-              setSearchText(e.target.value);
-            }}
-          />
-          <button
-            className="bg-green-100 p-2 m-2 py-1 ml-1 rounded-xl shadow-lg hover:bg-green-200 cursor-pointer hover:shadow-xl transition-transform transform hover:scale-105"
-            onClick={() => {
-              const filterSearch = listOfRestaurants.filter((res) => {
-                return res.info.name
-                  .toLowerCase()
-                  .includes(SearchText.toLowerCase());
-              });
-              setFilteredRestaurants(filterSearch);
-            }}
-          >
-            Search
-          </button>
-        </div>
-        <div className="filter flex items-center">
-          <button
-            className="p-2 m-3 py-1 bg-green-100 cursor-pointer rounded-xl shadow-lg  hover:bg-green-200 hover:shadow-xl transition-transform transform hover:scale-105"
-            onClick={() => {
-              FilteredData();
-            }}
-          >
-            Top Restaurants
-          </button>
-        </div>
-      </div>
-      <div className="resto_container flex flex-wrap ">
-        {FilteredRestaurants.map((restaurants) => {
-          // map through the filtered restaurants
-          return (
-            <Link
-              key={restaurants.info.id}
-              to={"/restaurants/" + restaurants.info.id}
-            >
-              {" "}
-              {restaurants.info.promoted ? (
-                <RestaurantCardPromoted restData={restaurants} />
-              ) : (
-                <RestaurantCards restData={restaurants} />
-              )}
-            </Link>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
+3. **Start the development server**
+   npm start
 
-export default Body;
+App will run at: http://localhost:3000/
 
-jest babel for unit and integration testing
--->
+**🌐 Deployment**
+You can deploy this frontend using platforms like:
+
+Vercel
+Netlify
+GitHub Pages
+Render
+
+**✍️ Author**
+SAHIL RASAL
+
+Email: sahilrasal742@gmail.com
+
+**📄 License**
+This project is open source and available under the MIT License.
+
+Let me know if you'd like me to:
+
+- Replace placeholders like username or email
+- Add deployment commands (Netlify, Vercel)
+- Include badges (build status, license, etc.)

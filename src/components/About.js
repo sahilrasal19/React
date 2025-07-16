@@ -1,50 +1,50 @@
 import UserContext from "../utils/UserContext.js";
 import User from "./User.js";
 import UserClass from "./UserClass.js";
-import React, { useState } from "react";
+import React from "react";
 
 class About extends React.Component {
   constructor(props) {
     super(props);
-    console.log("parent constructor");
+    // console.log("parent constructor");
   }
 
   componentDidMount() {
-    console.log("parent component did mount");
+    // console.log("parent component did mount");
   }
+
   render() {
-    console.log("parent render");
+    // console.log("parent render");
+
     return (
-      <div>
-        <h1>About Us</h1>
-        <User name={"SAHIL RASAL"} location={"Mumbai"} contact={"3942837"} />
-        <UserClass
-          name={"SAHIL RASAL"}
-          location={"Mumbai"}
-          contact={"394286937"}
-        />
-        <div>
+      <div className="p-6 md:p-10 bg-gray-50 min-h-screen">
+        <h1 className="text-4xl font-bold text-green-700 mb-6 border-b pb-2">
+          About Us
+        </h1>
+        {/* User functional component */}
+        <div className="mb-6 font-bold">
+          <User name="SAHIL RASAL" location="Mumbai" contact="9321578345" />
+        </div>
+        {/* User class component */}
+        <div className="mb-6 font-bold">
+          <UserClass name="SAHIL RASAL" location="Mumbai" contact="394286937" />
+        </div>
+        {/* UserContext usage */}
+        <div className="mt-4 p-4 bg-white rounded-md shadow-md font-bold">
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            Logged In User:
+          </h2>
           <UserContext.Consumer>
-            {({ loggedInUser }) => <h1>{loggedInUser}</h1>}
+            {({ loggedInUser }) => (
+              <p className="text-lg font-medium text-green-600">
+                {loggedInUser}
+              </p>
+            )}
           </UserContext.Consumer>
         </div>
       </div>
     );
   }
 }
-
-// const About = () => {
-//   return (
-//     <div>
-//       <h1>About Us</h1>
-//       <User name={"SAHIL RASAL"} location={"Mumbai"} contact={"3942837"} />
-//       <UserClass
-//         name={"SAHIL RASAL"}
-//         location={"Mumbai"}
-//         contact={"394286937"}
-//       />
-//     </div>
-//   );
-// };
 
 export default About;
