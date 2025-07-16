@@ -80,6 +80,9 @@ Netlify
 GitHub Pages
 Render
 
+**Deployed on Vercel**
+https://foodexpress-ten.vercel.app/
+
 **✍️ Author**
 SAHIL RASAL
 
