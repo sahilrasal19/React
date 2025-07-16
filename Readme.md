@@ -4,6 +4,10 @@ A fully responsive food ordering front-end app built with React, Tailwind CSS, R
 
 ---
 
+### 🚀 Live Demo
+
+🌐 [View Live on Vercel](https://foodexpress-ten.vercel.app/)
+
 ## 🚀 Features
 
 - ✅ Restaurant listing with search and filter
@@ -79,9 +83,6 @@ Vercel
 Netlify
 GitHub Pages
 Render
-
-**Deployed on Vercel**
-https://foodexpress-ten.vercel.app/
 
 **✍️ Author**
 SAHIL RASAL
